@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import AppRoute from './routes/AppRoute';
-import Header from './components/Layout/Header/Header';
+
 import { Fragment } from 'react';
 import Footer from './components/Layout/Footer/Footer';
+import Navbar from './components/Layout/Header/Navbar';
+// import Navbar from './components/Layout/Header/Navbar';
 
 function App() {
   return (
     <Fragment>
-      <Header />
+      <Navbar />
       <AppRoute />
       <Footer/>
     </Fragment>
