@@ -7,6 +7,8 @@ import mail from '../../../assets/images/mail_white.png';
 import linkdin from '../../../assets/images/linkdin_white.png';
 import classes from './Footer.module.css';
 import { Link } from 'react-router-dom';
+import Input from '../../UI/Input/Input';
+import Button from '../../UI/Button/Button';
 function Footer() {
   const imageIcon = [
     {
@@ -47,15 +49,16 @@ function Footer() {
           <h1>Follow Me</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, sed?</p>
         </div>
+
         <div className={classes['footer_content']}>
           {imageIcon.map((icon, index) => {
             return (
               <div className={classes.icon} key={index} title={icon.title}>
                 <a href={icon.url} target='_self'>
-                  <img className='icon_image' src={icon.src} alt={`${icon}-image`} />
+                  <img className='icon_image' src={icon.src} alt={icon.title} />
                 </a>
               </div>
-            )
+            );
           })}
         </div>
       </div>

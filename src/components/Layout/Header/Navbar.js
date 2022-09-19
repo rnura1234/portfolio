@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
-import classes from './Header.module.css';
-function Header() {
+import classes from './Navbar.module.css';
+function Navbar() {
   const [isActive, setIsActive] = useState({
     home: true,
     about: false,
@@ -10,7 +10,7 @@ function Header() {
     contact: false,
   });
   return (
-    <div className={classes.header}>
+    <div className={classes['navbar_container']}>
       <div className={classes.logo}>
         <h1>Portfolio</h1>
       </div>
@@ -77,4 +77,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

@@ -1,0 +1,25 @@
+.input_control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.input_required {
+  color: red;
+}
+
+.input {
+  outline: 0;
+  padding: 4px 8px;
+  border: 1px solid rgb(133, 131, 131);
+  font-size: 15px;
+}
+.input::placeholder {
+ 
+  font-size: 15px;
+  color: rgb(133, 131, 131);
+}
