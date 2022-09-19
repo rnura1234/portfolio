@@ -1,11 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+
+import SkillCard from '../../components/UI/Card/SkillCard';
 
 function Home() {
   return (
     <div>
       <h1>home</h1>
-      <Outlet />
+     <SkillCard/>
     </div>
   );
 }
